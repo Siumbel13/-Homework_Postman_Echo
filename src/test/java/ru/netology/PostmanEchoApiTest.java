@@ -21,7 +21,7 @@ public class PostmanEchoApiTest {
                 .then()
                 .statusCode(200)
                 //.body(/* --> ваша проверка здесь <-- */);
-                .body("data", equalTo("some data"));
+                .body("data", equalTo("data"));
     }
 
     @Test
@@ -39,6 +39,6 @@ public class PostmanEchoApiTest {
                 .then()
                 .statusCode(200)
                 //.body(/* --> ваша проверка здесь <-- */);
-                .body("data", equalTo("лень-двигатель прогресса"));
+                .body("data", equalTo("терпенье и труд все перетрут"));
     }
 }
