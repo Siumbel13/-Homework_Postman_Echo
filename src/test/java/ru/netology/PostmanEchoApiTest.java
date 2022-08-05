@@ -8,7 +8,7 @@ import static org.hamcrest.Matchers.equalTo;
 public class PostmanEchoApiTest {
 
     @Test
-            void shouldPostmanEchoFirstTest() {
+    void shouldPostmanEchoFirstTest() {
         // Given - When - Then
 // Предусловия
         given()
@@ -21,7 +21,7 @@ public class PostmanEchoApiTest {
                 .then()
                 .statusCode(200)
                 //.body(/* --> ваша проверка здесь <-- */);
-                .body("data", equalTo("data"));
+                .body("data", equalTo("some data"));
     }
 
     @Test
@@ -39,6 +39,6 @@ public class PostmanEchoApiTest {
                 .then()
                 .statusCode(200)
                 //.body(/* --> ваша проверка здесь <-- */);
-                .body("data", equalTo("терпенье и труд все перетрут"));
+                .body("data", equalTo("лень-двигатель прогресса"));
     }
 }
